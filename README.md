@@ -1,11 +1,11 @@
-##Template Laravel auth
+## Template Laravel auth
 ##### Laravel ui/auth
 
 ```
 $ composer require laravel/ui --dev
 $ php artisan ui:auth
 ```
-####Utilizando como base o CSS do MateriliazeCSS
+#### Utilizando como base o CSS do MateriliazeCSS
 
 O __*Laravel*__ na versão 8 já vem configurado com seus css padrão o __Tailwind CSS__, mas tambem é possivel alterar este padrão, com o seu antecessor, muito conhecido e muito utilizado entre os desenvoledores o famoso __Boostrap__.
 
@@ -27,7 +27,7 @@ $ git clone https://github.com/jlelis/app-template-laravel-materializecss.git
 $ cp .env.example .env
 ~~~
 * (sugestão) para o simples teste, altere o __DB_CONNECTION__ para o sqlite no aquivo .ENV, por padrão é o mysql, troque o mysql para __*sqlite*__:
-<img src="https://i.imgur.com/oBkylKL.png" width="200" height="200" />
+<img src="https://i.imgur.com/oBkylKL.png" width="250" height="250" />
 
 * Para criar o banco em memória sqlite:
 ~~~shell
@@ -53,13 +53,13 @@ $ php artisan serve
 ~~~shell
 http://127.0.0.1:8000
 ~~~
-######Caso as config. estejam corretas, irá aparacer no navegador como as imagens abaixo:
+###### Caso as config. estejam corretas, irá aparacer no navegador como as imagens abaixo:
 
 imagem 01 - Tela de Registro:
-![imagem tela register](https://i.imgur.com/j8bnreJ.png)
+![imagem tela register](https://i.imgur.com/GoI4xnx.png)
 
 imagem 02 - Tela de Login:
-![imagem tela login](https://i.imgur.com/NzhEkhx.png)
+![imagem tela login](https://i.imgur.com/IYDjxAE.png)
 
 Fonte(s): [Materializecss 1.0.0](https://materializecss.com/)
 
