@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="input-field col s12 @error('email') has-error @enderror">
-                        <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autocomplete="email">
                         <label for="email">{{ __('E-Mail Address') }}</label>
                         @error('email')
                             <div class="col s12">

@@ -56,30 +56,6 @@
 
                     @endguest
                 </ul>
-                {{--                @auth--}}
-                {{--                    <ul id="topnav-dropdown1" class="dropdown-content">--}}
-                {{--                        <li>--}}
-                {{--                            <a href="{{ route('logout') }}"--}}
-                {{--                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">--}}
-                {{--                                {{ __('Logout') }}--}}
-                {{--                            </a>--}}
-                {{--                        </li>--}}
-                {{--                    </ul>--}}
-                {{--                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">--}}
-                {{--                        @csrf--}}
-                {{--                    </form>--}}
-                {{--                @else--}}
-                {{--                    <ul id="topnav-dropdown1" class="dropdown-content">--}}
-                {{--                        <li>--}}
-                {{--                            <a href="{{ route('login') }}">{{ __('Login') }}</a>--}}
-                {{--                        </li>--}}
-                {{--                        @if (Route::has('register'))--}}
-                {{--                            <li>--}}
-                {{--                                <a href="{{ route('register') }}">{{ __('Register') }}</a>--}}
-                {{--                            </li>--}}
-                {{--                        @endif--}}
-                {{--                    </ul>--}}
-                {{--                @endauth--}}
             </div>
         </nav>
     </div>

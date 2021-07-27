@@ -1,62 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+##Template Laravel auth
+##### Laravel ui/auth
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+```
+$ composer require laravel/ui --dev
+$ php artisan ui:auth
+```
+####Utilizando como base o CSS do MateriliazeCSS
 
-## About Laravel
+O __*Laravel*__ na versão 8 já vem configurado com seus css padrão o __Tailwind CSS__, mas tambem é possivel alterar este padrão, com o seu antecessor, muito conhecido e muito utilizado entre os desenvoledores o famoso __Boostrap__.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+__Motivação:__ o framework css da  materializecss além de um visual bacana, deixa o site todo diferenciado com suas funcionabilidades de animações visuais.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Para instalação serão necessários atender alguns dos requisitos mínimos:
+* Composer 2.0
+* PHP >=7.4.11
+* Saber utilizar o terminal
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Seguindo as instruções passso-a-passo abaixo iniciará o app:
 
-## Learning Laravel
+* Clonar este repositório:
+~~~shell
+$ git clone https://github.com/jlelis/app-template-laravel-materializecss.git
+~~~~
+* Copiar o arquivo .env.example para __.env__  configurado conforme seu ambiente 
+~~~shell
+$ cp .env.example .env
+~~~
+* (sugestão) para o simples teste, altere o __DB_CONNECTION__ para o sqlite no aquivo .ENV, por padrão é o mysql, troque o mysql para __*sqlite*__:
+<img src="https://i.imgur.com/oBkylKL.png" width="200" height="200" />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Para criar o banco em memória sqlite:
+~~~shell
+$ touch database/database.sqlite
+~~~
+* Instalação das dependêcias Laravel
+~~~shell
+$ composer install
+~~~ 
+* Criação da chave( key)
+~~~shell
+$ php artisan key:generate
+~~~ 
+* Rodar o migrate (criação das tabelas no banco)
+~~~shell
+$ php artisan migrate
+~~~ 
+* Executar o servidor php embutido do Laravel
+~~~shell
+$ php artisan serve
+~~~
+* Acessar o navegador
+~~~shell
+http://127.0.0.1:8000
+~~~
+######Caso as config. estejam corretas, irá aparacer no navegador como as imagens abaixo:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+imagem 01 - Tela de Registro:
+![imagem tela register](https://i.imgur.com/j8bnreJ.png)
 
-## Laravel Sponsors
+imagem 02 - Tela de Login:
+![imagem tela login](https://i.imgur.com/NzhEkhx.png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Fonte(s): [Materializecss 1.0.0](https://materializecss.com/)
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+License: MIT
