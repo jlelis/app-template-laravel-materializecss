@@ -1,4 +1,4 @@
-## Template Laravel auth
+## Template Laravel auth com Materializecss
 ##### Laravel ui/auth
 
 ```
@@ -56,9 +56,12 @@ http://127.0.0.1:8000
 ###### Caso as config. estejam corretas, irá aparacer no navegador como as imagens abaixo:
 
 imagem 01 - Tela de Registro:
+
 ![imagem tela register](https://i.imgur.com/GoI4xnx.png)
 
+
 imagem 02 - Tela de Login:
+
 ![imagem tela login](https://i.imgur.com/IYDjxAE.png)
 
 Fonte(s): [Materializecss 1.0.0](https://materializecss.com/)
